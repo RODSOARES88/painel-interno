@@ -1,0 +1,73 @@
+name: SharePoint Audit
+
+# Roda toda segunda 09h00 (horário de BH/BRT, UTC-3 → 12h UTC)
+# Também pode ser disparado manualmente via "Run workflow" na UI.
+on:
+  schedule:
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Run audit
+        id: audit
+        env:
+          AZURE_TENANT_ID: ${{ secrets.AZURE_TENANT_ID }}
+          AZURE_CLIENT_ID: ${{ secrets.AZURE_CLIENT_ID }}
+          AZURE_CLIENT_SECRET: ${{ secrets.AZURE_CLIENT_SECRET }}
+        # URI da pasta "Central de comando - Nepomuceno Soares"
+        run: |
+          python scripts/sharepoint_audit.py \
+            --folder-uri "file:///b!8P5Egiw6vUuoeo7GidDlS2MQXWtpcm1CllFlqjIAlSsN7lrFE_bYR4T7mTogFed_/01KKRSXWC5BS6EBJY4YBGJR4LRLJVKBFVF" \
+            --folder-label "Central de comando - Nepomuceno Soares"
+        continue-on-error: true
+
+      - name: Commit manifest if changed
+        run: |
+          git config user.name "BMG Sync Bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add .sync-manifest.json audit-report.md 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "chore(sync): atualiza manifest SharePoint $(date -u +%Y-%m-%d)"
+          git push || true
+
+      - name: Open issue if new files detected
+        if: steps.audit.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const body = fs.readFileSync('audit-report.md', 'utf8');
+            const dataStr = new Date().toISOString().slice(0, 10);
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🆕 SharePoint Central · novos arquivos detectados (${dataStr})`,
+              body: body,
+              labels: ['sharepoint-sync', 'pendente-processar']
+            });
+
+      - name: Report status
+        run: |
+          if [ "${{ steps.audit.outcome }}" == "failure" ]; then
+            echo "⚠️ Arquivos novos detectados · issue aberta."
+          else
+            echo "✓ Pasta sincronizada · nada novo."
+          fi
