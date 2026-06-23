@@ -48,13 +48,38 @@ jobs:
           git diff --cached --quiet || git commit -m "chore(sync): atualiza manifest SharePoint $(date -u +%Y-%m-%d)"
           git push || true
 
+      - name: Ensure issue labels exist
+        if: steps.audit.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const labels = [
+              { name: 'sharepoint-sync',     color: '0E8A16', description: 'Watchdog SharePoint detectou novidade' },
+              { name: 'pendente-processar', color: 'D93F0B', description: 'Aguarda processamento manual via Claude' },
+            ];
+            for (const l of labels) {
+              try {
+                await github.rest.issues.getLabel({ owner: context.repo.owner, repo: context.repo.repo, name: l.name });
+              } catch (e) {
+                if (e.status === 404) {
+                  await github.rest.issues.createLabel({ owner: context.repo.owner, repo: context.repo.repo, ...l });
+                  console.log(`Criou label: ${l.name}`);
+                } else { throw e; }
+              }
+            }
+
       - name: Open issue if new files detected
         if: steps.audit.outcome == 'failure'
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
-            const body = fs.readFileSync('audit-report.md', 'utf8');
+            let body;
+            try {
+              body = fs.readFileSync('audit-report.md', 'utf8');
+            } catch (e) {
+              body = '⚠ Audit não gerou relatório (possível erro de autenticação ou Graph API). Veja logs do run.';
+            }
             const dataStr = new Date().toISOString().slice(0, 10);
             await github.rest.issues.create({
               owner: context.repo.owner,
