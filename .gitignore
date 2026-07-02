@@ -1,0 +1,14 @@
+# NUNCA commitar o HTML em claro — a senha StatiCrypt só protege o index.html cifrado.
+# O claro vive só local (fonte de edição).
+decrypted/
+*.claro.html
+
+# Artefatos StatiCrypt
+encrypted/
+.staticrypt.json
+
+# Sistema
+.DS_Store
+Thumbs.db
+*.swp
+node_modules/
