@@ -3,7 +3,7 @@
     "criado_em": "2026-05-27T13:30:00Z",
     "descricao": "Arquivos do SharePoint pasta 'Central de comando - Nepomuceno Soares' já vistos pelo workflow. Atualizado automaticamente toda segunda 9h.",
     "folder_uri": "file:///b!8P5Egiw6vUuoeo7GidDlS2MQXWtpcm1CllFlqjIAlSsN7lrFE_bYR4T7mTogFed_/01KKRSXWC5BS6EBJY4YBGJR4LRLJVKBFVF",
-    "ultima_sync": "2026-08-17T12:52:28.558249Z"
+    "ultima_sync": "2026-08-24T12:58:30.524792Z"
   },
   "arquivos_conhecidos": {
     "Encerramentos ate 18 maio.xlsx": {
@@ -48,6 +48,12 @@
       "size": 26849,
       "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7BE8F83732-A377-4155-ABC4-198E7B82A5E5%7D&file=Relatorio%20Casos%20novos%2009.06.2026%20a%2015.06.2026.xlsx&action=default&mobileredirect=true"
     },
+    "Relatorio Casos novos 11.08.2026 a 17.08.2026.xlsx": {
+      "id": "01KKRSXWCZXM7FVKFWAVCJQAXJ5A5SL6SJ",
+      "modified": "2026-08-19T12:42:23Z",
+      "size": 15149,
+      "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B5A3EBB59-B6A8-4405-9802-E9E83B25FA49%7D&file=Relatorio%20Casos%20novos%2011.08.2026%20a%2017.08.2026.xlsx&action=default&mobileredirect=true"
+    },
     "Relatorio Casos novos 16.06.2026 a 22.06.2026.xlsx": {
       "id": "01KKRSXWAJRPALUAEQKVD3PB45FLK7B3WH",
       "modified": "2026-06-24T03:07:06Z",
@@ -80,8 +86,8 @@
     },
     "Relatorio casos novos Ano 2026.xlsx": {
       "id": "01KKRSXWBEF5FYERHUENGY7UWI4G4QTZFI",
-      "modified": "2026-08-12T13:11:52Z",
-      "size": 374578,
+      "modified": "2026-08-19T12:40:45Z",
+      "size": 376363,
       "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B824B2F24-F444-4D23-8FD2-C8E1B909E4A8%7D&file=Relatorio%20casos%20novos%20Ano%202026.xlsx&action=default&mobileredirect=true"
     },
     "Relatorio defesas Apresentadas - 02.06.2026 a 08.06.2026.xlsx": {
@@ -107,6 +113,12 @@
       "modified": "2026-06-16T22:11:27Z",
       "size": 25690,
       "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B1EDEB0B1-1EBB-473F-A3E2-9DAAEBF7BCA1%7D&file=Relatorio%20defesas%20Apresentadas%20-%2009.06.2026%20a%2015.06.2026.xlsx&action=default&mobileredirect=true"
+    },
+    "Relatorio defesas Apresentadas - 11.08.2026 a 17.08.2026.xlsx": {
+      "id": "01KKRSXWC55RCWRBKR6VH3N7UNBNPSW5G2",
+      "modified": "2026-08-19T12:39:13Z",
+      "size": 18612,
+      "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B6845EC5D-5185-4FF5-B6FE-8D0B5F2B74DA%7D&file=Relatorio%20defesas%20Apresentadas%20-%2011.08.2026%20a%2017.08.2026.xlsx&action=default&mobileredirect=true"
     },
     "Relatorio defesas Apresentadas - 12.05.2026 a 18.05.2026.xlsx": {
       "id": "01KKRSXWBV2J3QOFSXQRHLFMJRJFQPMAZZ",
@@ -164,8 +176,8 @@
     },
     "Relatorio Gerencial Carteira BMG.xls": {
       "id": "01KKRSXWBZJYBCIWPEFZCKS62XZZVSN3UN",
-      "modified": "2026-08-12T13:18:05Z",
-      "size": 39701971,
+      "modified": "2026-08-19T12:51:47Z",
+      "size": 39715164,
       "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B24024E39-E459-442E-A97B-57CE6B26EE8D%7D&file=Relatorio%20Gerencial%20Carteira%20BMG.xls&action=default&mobileredirect=true"
     },
     "Relatório reembolsos pendentes até 01.06.2026.xlsx": {
@@ -203,6 +215,12 @@
       "modified": "2026-06-16T22:25:53Z",
       "size": 31161,
       "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B7C647776-DD42-48A4-ADC5-47DFA90CB97F%7D&file=Relat%C3%B3rio%20reembolsos%20pendentes%20at%C3%A9%2015.06.2026.xlsx&action=default&mobileredirect=true"
+    },
+    "Relatório reembolsos pendentes até 17.08.2026.xlsx": {
+      "id": "01KKRSXWCWTFITJEWTWREKHZQCVUSBD5A6",
+      "modified": "2026-08-19T13:31:29Z",
+      "size": 29952,
+      "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B34519956-D392-48B4-A3E6-02AD2411F41E%7D&file=Relat%C3%B3rio%20reembolsos%20pendentes%20at%C3%A9%2017.08.2026.xlsx&action=default&mobileredirect=true"
     },
     "Relatório reembolsos pendentes até 18.05.2026.xlsx": {
       "id": "01KKRSXWAL2J6Z6K5APNHKGMJZ4ZBPXHNX",
