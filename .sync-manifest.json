@@ -3,7 +3,7 @@
     "criado_em": "2026-05-27T13:30:00Z",
     "descricao": "Arquivos do SharePoint pasta 'Central de comando - Nepomuceno Soares' já vistos pelo workflow. Atualizado automaticamente toda segunda 9h.",
     "folder_uri": "file:///b!8P5Egiw6vUuoeo7GidDlS2MQXWtpcm1CllFlqjIAlSsN7lrFE_bYR4T7mTogFed_/01KKRSXWC5BS6EBJY4YBGJR4LRLJVKBFVF",
-    "ultima_sync": "2026-11-02T21:34:24.347386Z"
+    "ultima_sync": "2026-11-09T22:07:32.678250Z"
   },
   "arquivos_conhecidos": {
     "Encerramentos ate 18 maio.xlsx": {
@@ -53,6 +53,12 @@
       "modified": "2026-09-30T03:37:48Z",
       "size": 16734,
       "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B541E0748-F3A7-452A-85A3-B184A99AB433%7D&file=Relatorio%20Casos%20novos%20%2022.09.2026%20a%2028.09.2026.xlsx&action=default&mobileredirect=true"
+    },
+    "Relatorio Casos novos  27.10.2026 a 02.11.2026.xlsx": {
+      "id": "01KKRSXWFOOALF7G6LDFGJ6BHBL47E2V26",
+      "modified": "2026-11-04T03:46:46Z",
+      "size": 15025,
+      "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B5F1670AE-CB9B-4C19-9F04-E15F3E4D575E%7D&file=Relatorio%20Casos%20novos%20%2027.10.2026%20a%2002.11.2026.xlsx&action=default&mobileredirect=true"
     },
     "Relatorio Casos novos  29.09.2026 a 05.10.2026.xlsx": {
       "id": "01KKRSXWFL6KXYURUUMVAZHROD3J7KU67Z",
@@ -276,6 +282,12 @@
       "size": 25864,
       "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B52891006-981F-4D15-8632-2F76313B88EE%7D&file=Relatorio%20defesas%20Apresentadas%20-%2026.05.2026%20a%2001.06.2026.xlsx&action=default&mobileredirect=true"
     },
+    "Relatorio defesas Apresentadas - 27.10.2026 a 02.11.2026.xlsx": {
+      "id": "01KKRSXWB2YU4AAIKPBFAKGPNHQ2JGPQBG",
+      "modified": "2026-11-04T03:45:26Z",
+      "size": 14244,
+      "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B0038C53A-4F21-4009-A33D-A7869267C026%7D&file=Relatorio%20defesas%20Apresentadas%20-%2027.10.2026%20a%2002.11.2026.xlsx&action=default&mobileredirect=true"
+    },
     "Relatorio defesas Apresentadas - 28.07.2026 a 03.08.2026.xlsx": {
       "id": "01KKRSXWA46WQGF75KG5FIFZWACWEKP6ZJ",
       "modified": "2026-08-05T13:48:50Z",
@@ -296,8 +308,8 @@
     },
     "Relatorio Gerencial Carteira BMG.xls": {
       "id": "01KKRSXWG22O645E6ULNDIKZQGKAKMUJWT",
-      "modified": "2026-10-28T12:46:57Z",
-      "size": 39913507,
+      "modified": "2026-11-04T03:55:13Z",
+      "size": 39927882,
       "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7BCEBDD3DA-D493-465B-8566-065014CA26D3%7D&file=Relatorio%20Gerencial%20Carteira%20BMG.xls&action=default&mobileredirect=true"
     },
     "Relatório reembolsos pendentes até 01.06.2026.xlsx": {
@@ -305,6 +317,12 @@
       "modified": "2026-06-02T19:23:16Z",
       "size": 32255,
       "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B05200558-BD44-45AE-AE3D-6C6A1FAECCAF%7D&file=Relat%C3%B3rio%20reembolsos%20pendentes%20at%C3%A9%2001.06.2026.xlsx&action=default&mobileredirect=true"
+    },
+    "Relatório reembolsos pendentes até 02.11.2026.xlsx": {
+      "id": "01KKRSXWG535WQ5JM76VBZU2KDC6Q2VGXZ",
+      "modified": "2026-11-04T03:49:47Z",
+      "size": 27146,
+      "webUrl": "https://escritorionepomuceno.sharepoint.com/sites/BMG/_layouts/15/Doc.aspx?sourcedoc=%7B0E6DDFDD-9FA5-43F5-9A69-4317A1AA9AF9%7D&file=Relat%C3%B3rio%20reembolsos%20pendentes%20at%C3%A9%2002.11.2026.xlsx&action=default&mobileredirect=true"
     },
     "Relatório reembolsos pendentes até 05.08.2026.xlsx": {
       "id": "01KKRSXWF3GO7PZ3NEOZG2RJ635N5ZYQCH",
